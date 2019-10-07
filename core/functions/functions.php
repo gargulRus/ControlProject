@@ -18,15 +18,15 @@ function goMail( $executorEmail, $subject, $message){
     $mail = new PHPMailer;
 
     $mail->isSMTP();                                      // Set mailer to use SMTP
-    $mail->Host = '	smtp.mail.ru';                       // Specify main and backup SMTP servers
+    $mail->Host = '*';                       // Specify main and backup SMTP servers
     $mail->SMTPAuth = true;                               // Enable SMTP authentication
-    $mail->Username = 'it@giprozdraw.ru';             // SMTP username
-    $mail->Password = 'dasnat917';                         // SMTP password
-    $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
+    $mail->Username = '*';             // SMTP username
+    $mail->Password = '*';                         // SMTP password
+    $mail->SMTPSecure = '*';                            // Enable TLS encryption, `ssl` also accepted
     $mail->Port = 465;                                    // TCP port to connect to
     $mail->CharSet = 'UTF-8';
     
-    $mail->setFrom('it@giprozdraw.ru', 'V-Bot');
+    $mail->setFrom('*', 'V-Bot');
     
     //Формируем адрес на который отправим
     // if( isset($params['to'][1]) ){
